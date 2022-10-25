@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  php:
+    container_name: AER-Webserver
+    restart: always
+    env_file:
+      - "variables.env"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - "database"
+    ports:
+      - "80:80"
+      - "443:443"
+  mqtt:
+    container_name: AER-MQTT
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile.mqtt
+    ports:
+      - "1883:1883"
+  database:
+    container_name: AER-Database
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile.sql
+    env_file:
+      - "variables.env"

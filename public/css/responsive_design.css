@@ -1,0 +1,11 @@
+@media screen and (max-width: 1024px) {
+
+    #dashboard {
+        width: 90%;
+    }
+
+    .half-width {
+        width: 90%;
+    }
+
+}

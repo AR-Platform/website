@@ -1,0 +1,176 @@
+html {
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+h4 {
+    margin: 2px 0;
+}
+
+header {
+    height: 45px;
+    position: sticky;
+    z-index: 99;
+    top: 10px;
+    padding: 0 20px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: var(--main-bg-color-shade-one);
+    filter: drop-shadow(0 0 0.75rem var(--shadow-color));
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    margin: 0 0 0 auto;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--main-accent-color);
+}
+
+header nav li:first-child {
+    margin-left: 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#dashboard {
+    margin-top: 10vh;
+}
+
+.two-rows {
+    columns: auto 2;
+    column-gap: 20px;
+}
+
+.two-rows > *:not(script, .modal) {
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--main-bg-color-shade-one);
+    filter: drop-shadow(0 0 5px var(--shadow-color));
+}
+
+.box, .box-children > *:not(script, .modal) {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--main-bg-color-shade-one);
+    filter: drop-shadow(0 0 5px var(--shadow-color));
+}
+
+.simple-box {
+    background-color: var(--main-bg-color-shade);
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.simple-box:last-child {
+    margin-bottom: 0;
+}
+
+.list-item {
+    background-color: var(--main-bg-color-shade);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.list-item:last-child {
+    margin-bottom: 0;
+}
+
+.centered-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.quarter-width {
+    width: 25%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.default-top-margin {
+    margin-top: 10vh;
+}
+
+.critical-outline {
+    border: var(--critical-color) 4px solid;
+    filter: drop-shadow(0 0 5px var(--critical-color)) !important;
+}
+
+.hidden {
+    border-left: lightgray 3px solid;
+}
+
+a {
+    text-decoration: none;
+}
+
+a h4 {
+    color: var(--main-accent-color);
+}

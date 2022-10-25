@@ -1,0 +1,37 @@
+.content-container {
+    overflow: hidden;
+}
+
+.content-action {
+    float: right;
+    cursor: pointer;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.content-delete {
+    color: var(--critical-color);
+}
+
+.content-lock {
+    float: right;
+    cursor: pointer;
+    background-color: var(--main-accent-color);
+    border-radius: 2px;
+    width: 12px;
+    height: 10px;
+    margin-top: 7px;
+}
+
+.content-lock:before {
+    content: "";
+    display: block;
+    border: 2px solid var(--main-accent-color);
+    width: 6px;
+    height: 10px;
+    border-radius: 5px 5px 0 0;
+    margin-top: -9px;
+    margin-left: 1px;
+}

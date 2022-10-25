@@ -1,0 +1,8 @@
+{
+  "require": {
+    "php-mqtt/client" : "1.1.1"
+  },
+  "config": {
+    "vendor-dir": "src/vendor/"
+  }
+}

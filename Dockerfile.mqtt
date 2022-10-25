@@ -1,0 +1,2 @@
+FROM eclipse-mosquitto:latest
+COPY docker/mosquitto.conf /mosquitto/config/mosquitto.conf

@@ -1,0 +1,151 @@
+form {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    height: auto;
+}
+
+form h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+form label:not(.checkbox) {
+    display: none;
+}
+
+form input, form textarea, select {
+    width: 100%;
+    box-sizing: border-box;
+    border: var(--outline-color) solid 2px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: none;
+    color: var(--main-text-color);
+    transition: color, background 0.5s;
+    outline-offset: 2px;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin: 0 10px;
+}
+
+form input[type="color"] {
+    padding: 5px;
+    min-height: 40px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 40px;
+    max-height: 25vh;
+}
+
+form > input:last-child {
+    margin-bottom: 0;
+}
+
+form input.invalid {
+    border-color: var(--critical-color) !important;
+}
+
+form input.valid {
+    border-color: var(--main-accent-color);
+}
+
+form select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+form select option {
+    color: white;
+    background-color: #1D1D1D;
+}
+
+form button {
+    color: var(--main-accent-color);
+    border: var(--main-accent-color) solid 2px;
+    background: linear-gradient(90deg, var(--main-accent-color) 50%, rgba(0, 0, 0, 0) 55%);
+    background-size: 220%;
+    background-position-x: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: color, background 0.5s;
+    outline-offset: 2px;
+}
+
+form button.critical {
+    border-color: var(--critical-color);
+    color: var(--critical-color);
+    background: linear-gradient(90deg, var(--critical-color) 50%, rgba(0, 0, 0, 0) 55%);
+    background-size: 220%;
+    background-position-x: 100%;
+}
+
+form button:hover {
+    background-position-x: 0;
+    color: var(--main-accent-color-inv);
+}
+
+form button:active {
+    transition: 0s;
+    border-color: var(--outline-color);
+}
+
+form .two-inputs-row {
+    width: calc(50% - 5px);
+}
+
+form h3 {
+    display: inline-block;
+}
+
+form button:last-child {
+    margin-bottom: 0;
+}
+
+form .two-inputs-row:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+form.ribbon {
+    width: fit-content;
+    background: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+form.ribbon > * {
+    margin: 0;
+    display: inline;
+    width: auto;
+}
+
+form.ribbon > *:not(:last-child) {
+    margin-right: 10px;
+}
+
+*::placeholder {
+    color: var(--placeholder-color) !important;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    color: var(--placeholder-color) !important;
+}
+
+*::-ms-input-placeholder {
+    color: var(--placeholder-color) !important;
+}
+
+*:-ms-input-placeholder {
+    color: var(--placeholder-color) !important;
+}

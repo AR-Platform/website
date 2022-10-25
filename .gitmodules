@@ -1,0 +1,5 @@
+[submodule "resources/converter"]
+	path = resources/converter
+	url = https://github.com/AR-Platform/file-converter.git
+	update = merge
+	branch = master

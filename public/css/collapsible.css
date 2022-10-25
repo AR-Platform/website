@@ -1,0 +1,25 @@
+.collapsible {
+    position: relative;
+}
+
+.collapsible + div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 10px;
+    position: absolute;
+    margin-right: 15px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 0 0 0 var(--main-accent-color);
+    color: transparent;
+}
+
+.collapsible-open:after {
+    content: "\2796";
+}

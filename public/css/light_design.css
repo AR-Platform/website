@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-bg-color: #f1f1f1;
+        --main-bg-color-shade: rgba(0, 0, 0, 0.075);
+        --main-bg-color-shade-one: #e0e0e0;
+        --main-bg-color-shade-two: #c9c9c9;
+        --main-text-color: #0e0e0e;
+        --main-accent-color: #2e6e6e;
+        --main-accent-color-inv: #f1f1f1;
+        --placeholder-color: #2d2d2d;
+        --outline-color: #1d1d1d;
+        --shadow-color: #b7b7b7;
+        --critical-color: #ff4500;
+    }
+}
